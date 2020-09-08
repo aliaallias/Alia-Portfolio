@@ -1,30 +1,24 @@
-<<<<<<< HEAD
-const express = require('express')
-const app = express()
- 
+// server.js
+// load the things we need
+var express = require('express');
+var app = express();
+
+app.use(express.static('public'))
+
+// set the view engine to ejs
 app.set('view engine', 'ejs');
 
-app.get('/', function (req, res) {
-  res.render('home')
-})
+// use res.render to load up an ejs view file
 
-app.get('/contact', (req, res)=> {
-    res.render('contact')
-})
- 
-=======
-const express = require('express')
-const app = express()
- 
-app.set('view engine', 'ejs');
+// index page 
+app.get('/', function(req, res) {
+    res.render('home');
+});
 
-app.get('/', function (req, res) {
-  res.render('home')
-})
+// about page 
+app.get('/contact', function(req, res) {
+    res.render('contact');
+});
 
-app.get('/contact', (req, res)=> {
-    res.render('contact')
-})
- 
->>>>>>> cc4ee924aaadbeb260414b39e10283c284e769fa
-app.listen(3010)
+app.listen(8080);
+console.log('8080 is the magic port');

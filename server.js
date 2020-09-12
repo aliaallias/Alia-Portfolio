@@ -16,6 +16,16 @@ app.get('/', function(req, res) {
 });
 
 // about page 
+app.get('/about', function(req, res) {
+    res.render('about');
+});
+
+// about page 
+app.get('/portfolio', function(req, res) {
+    res.render('portfolio');
+});
+
+// about page 
 app.get('/contact', function(req, res) {
     res.render('contact');
 });

@@ -1,13 +1,27 @@
-/*!
-* Start Bootstrap - The Big Picture (https://startbootstrap.com/templates/the-big-picture)
-* Copyright 2013-2020 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
-*/
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
 body {
-background: url('https://picsum.photos/1920/1080') no-repeat center center fixed;
+background-color: black;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 background-size: cover;
 -o-background-size: cover;
 color: white;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.about-text {
+    color: #7ED10B;
+}
+
+.vertical-center {
+    height: 100%
+    display: flex;
+    align-items: center;
 }
